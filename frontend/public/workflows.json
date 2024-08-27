@@ -1,0 +1,118 @@
+[
+	{
+		"id": 0,
+		"name": "Email Notification",
+		"trigger": "New Sign Up",
+		"tasks": [
+			{
+				"name": "Send Welcome Email",
+				"needsKey": false,
+				"provider": "NotZapier"
+			},
+			{
+				"name": "Add to Mailing List",
+				"needsKey": false,
+				"provider": "NotZapier"
+			},
+			{
+				"name": "Notify Sales Team",
+				"needsKey": false,
+				"provider": "NotZapier"
+			},
+			{
+				"name": "Post to Social Media",
+				"params": {},
+				"provider": "Meta",
+				"needsKey": false
+			}
+		]
+	},
+	{
+		"id": 1,
+		"name": "Invoice Processing",
+		"trigger": "Invoice Received",
+		"tasks": [
+			{ "name": "Extract Data", "needsKey": false, "provider": "NotZapier" },
+			{
+				"name": "Validate Information",
+				"needsKey": false,
+				"provider": "NotZapier"
+			},
+			{
+				"name": "Record in Accounting System",
+				"needsKey": false,
+				"provider": "NotZapier"
+			},
+			{ "name": "Schedule Payment", "needsKey": false, "provider": "NotZapier" }
+		]
+	},
+	{
+		"id": 2,
+		"name": "Social Media Post",
+		"trigger": "Content Approved",
+		"tasks": [
+			{
+				"name": "Format for Platform",
+				"needsKey": false,
+				"provider": "NotZapier"
+			},
+			{ "name": "Add Hashtags", "needsKey": false, "provider": "NotZapier" },
+			{ "name": "Schedule Post", "needsKey": false, "provider": "NotZapier" },
+			{
+				"name": "Notify Marketing Team",
+				"needsKey": false,
+				"provider": "NotZapier"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"name": "Customer Support Ticket",
+		"trigger": "New Support Request",
+		"tasks": [
+			{
+				"name": "Categorize Issue",
+				"needsKey": false,
+				"provider": "NotZapier"
+			},
+			{
+				"name": "Assign to Department",
+				"needsKey": false,
+				"provider": "NotZapier"
+			},
+			{ "name": "Set Priority", "needsKey": false, "provider": "NotZapier" },
+			{
+				"name": "Send Confirmation to Customer",
+				"needsKey": false,
+				"provider": "NotZapier"
+			}
+		]
+	},
+	{
+		"id": 4,
+		"name": "Inventory Restock",
+		"trigger": "Low Stock Alert",
+		"tasks": [
+			{
+				"name": "Check Supplier Availability",
+				"needsKey": false,
+				"provider": "NotZapier"
+			},
+			{
+				"name": "Generate Purchase Order",
+				"needsKey": false,
+				"provider": "NotZapier"
+			},
+			{
+				"name": "Send Order to Supplier",
+				"needsKey": false,
+				"provider": "NotZapier"
+			},
+			{
+				"name": "Update Inventory System",
+				"needsKey": false,
+				"provider": "NotZapier"
+			}
+		]
+	}
+]
